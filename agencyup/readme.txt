@@ -1,11 +1,11 @@
 ﻿=== Agencyup ===
 Contributors: themeansar
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, sticky-post, threaded-comments, translation-ready, rtl-language-support, blog, e-commerce
-Tested up to: 6.6
-Requires PHP: 7.0
-Requires at least: 5.4
-Stable tag: 1.41
-Version: 1.41
+Tested up to: 6.8
+Requires PHP: 7.4
+Requires at least: 6.6
+Stable tag: 1.42
+Version: 1.42
 
 == Theme License & Copyright ==
 Agencyup is distributed under the terms of the GNU GPL
@@ -227,3 +227,6 @@ Source: https://stocksnap.io/photo/working-chromebook-GHIBZPY4FS
 
 --- Version 1.41 ----
 1. Fixed Styling Issue
+
+--- Version 1.42 ----
+1. Fixed Deprecation Issue

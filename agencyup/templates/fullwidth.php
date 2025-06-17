@@ -15,17 +15,18 @@ get_template_part('index','banner'); ?>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <div class="bs-card-box shd">
         <?php while (have_posts()) : the_post();
               if(has_post_thumbnail()) {
           if ( is_single() ) { ?>
             <figure class="post-thumbnail">
-              <?php the_post_thumbnail('full'); ?>          
+              <?php the_post_thumbnail('full',['class' => 'attachment-full size-full img-fluid']); ?>         
             </figure>
           <?php }
           else { ?>
             <figure class="post-thumbnail">
               <a href="<?php the_permalink(); ?>" >
-                <?php the_post_thumbnail('full'); ?>
+                <?php the_post_thumbnail('full',['class' => 'attachment-full size-full img-fluid']); ?>
               </a>        
             </figure>
           <?php }
@@ -36,7 +37,9 @@ get_template_part('index','banner'); ?>
                   comments_template();
               endif;
           endwhile;
-        ?>
+          agencyup_edit_link(); ?>
+        
+        </div>
       </div>
     </div>
   </div>

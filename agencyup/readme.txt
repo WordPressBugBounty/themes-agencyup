@@ -4,8 +4,8 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, custom-colors, cu
 Tested up to: 6.8
 Requires PHP: 7.4
 Requires at least: 6.6
-Stable tag: 1.42
-Version: 1.42
+Stable tag: 1.43
+Version: 1.43
 
 == Theme License & Copyright ==
 Agencyup is distributed under the terms of the GNU GPL
@@ -230,3 +230,6 @@ Source: https://stocksnap.io/photo/working-chromebook-GHIBZPY4FS
 
 --- Version 1.42 ----
 1. Fixed Deprecation Issue
+
+--- Version 1.43 ----
+1. Fixed Category Count Styling.

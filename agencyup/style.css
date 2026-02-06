@@ -4,7 +4,7 @@ Theme URI: https://themeansar.com/free-themes/agencyup/
 Author: themeansar
 Author URI: https://themeansar.com
 Description: Agencyup WordPress theme ideal for a business or perfect solutions for corporate, consulting, wedding planners, agency, law firms, finance, law travel, recipes, sport/medical shops, startups, online agencies, portfolios, freelancers, E-commerce.  The theme is responsive, WPML, Retina ready, SEO friendly(Live preview : https://demos.themeansar.com/agencyup/)
-Version: 1.42
+Version: 1.43
 Tested up to: 6.8
 Requires PHP: 7.4
 Requires at least: 6.6
@@ -1659,7 +1659,7 @@ font-weight: 600;
 }
 .comment-form-comment textarea {
 	width: 100%;
-	height: 100px;
+	height: unset;
 	border: 2px solid #eef3fb;
 }
 .comment-form-author, .comment-form-email {
@@ -1906,6 +1906,13 @@ color: #fff;
 }
 .bs-sidebar .wp-block-latest-comments__comment-meta {
     word-break: break-all;
+}
+.bs-sidebar :is(ul.wp-block-categories-list.wp-block-categories, ul.wp-block-archives-list.wp-block-archives) li {
+	display: flex;
+	justify-content: space-between;
+}
+.bs-sidebar :is(ul.wp-block-categories-list.wp-block-categories li.current-cat, ul.wp-block-archives-list.wp-block-archives li:has([aria-current="page"])) {
+	font-weight: 500;
 }
 .bs-widget ul {
 	padding: 0;

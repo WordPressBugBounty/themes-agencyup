@@ -105,10 +105,10 @@ $nav_menu_sticky = get_theme_mod('nav_menu_sticky','sticky');
            <?php wp_nav_menu( array(
                 'theme_location' => 'primary',
                 'container'  => 'collapse navbar-collapse',
-                'menu_class' => 'nav navbar-nav ml-auto',
+                'menu_class' => 'nav navbar-nav ml-auto '.(is_rtl() ? 'sm-rtl' : ''),
                 'fallback_cb' => 'agencyup_fallback_page_menu',
                 'walker' => new agencyup_nav_walker()
-              ) ); 
+              ) );
       ?>
           </div>
           <div class="desk-header d-flex pl-3 ml-auto my-2 my-lg-0 position-relative align-items-center">
